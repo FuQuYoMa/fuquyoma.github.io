@@ -18,3 +18,12 @@
 
 ![Код для создания анимированных обой](REPORTS/body.png)
 ![Созданные обои](REPORTS/body1.png)
+
+program fqm;
+var a,b,c: integer;
+begin
+a:=3;
+b:=5;
+c:=a+b;
+writeln(c);
+end.
