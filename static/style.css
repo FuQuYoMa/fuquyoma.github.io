@@ -9,7 +9,7 @@ body {
     position: relative;
     overflow: hidden; 
     animation-name: changeBackground;
-    animation-duration: 60s;
+    animation-duration: 45s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
