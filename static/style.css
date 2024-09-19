@@ -82,3 +82,48 @@ div.page {
     background: #f1fbfe;
 }
 
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%; /* Соотношение сторон для вертикального видео */
+  height: 0;
+  overflow: hidden;
+  background-color: transparent; /* Прозрачный фон */
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Видео сохраняет пропорции */
+  background-color: transparent; /* Прозрачный фон */
+}
+
+html, body {
+  height: 100%;
+  overflow: auto;
+}
+
+.fixed-btn {
+  position: fixed;
+  bottom: 20px; /* Отступ от нижнего края страницы */
+  right: 20px;  /* Отступ от правого края страницы */
+  z-index: 1000; /* Чтобы кнопка была поверх других элементов */
+
+  background-color: transparent !important; /* Прозрачный фон */
+  border: 1px solid transparent !important; /* Прозрачная рамка */
+  color: #fff; /* Цвет текста */
+  
+  /* Отключение стандартных теней и обводок от Bootstrap */
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.fixed-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Легкий прозрачный фон при наведении */
+  border-color: transparent !important; /* Прозрачная рамка при наведении */
+}
+
+
